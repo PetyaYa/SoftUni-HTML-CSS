@@ -1,0 +1,303 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font: 16px/1.5 Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body, input, textarea, option, select, table, form {
+    font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, blockquote {
+    font-family: Georgia, serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 1rem 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.8em;
+}
+
+h5 {
+    font-size: 1.5em;
+}
+
+h6 {
+    font-size: 1.2em;
+}
+
+img {
+    background-color: rgb(255, 255, 255);
+    border: 0.2em solid black;
+    padding: 0.5em;
+    box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.5);
+}
+
+blockquote {    
+    font-style: italic;
+    border-left: 0.3em solid #bbb;
+    padding-left: 2em;
+    margin-left: 2em;       
+    width: 40%;
+}
+
+blockquote p {
+    text-align: left;
+    padding: 0 0 1em;
+    margin: 0;    
+}
+
+blockquote p:last-child {
+    text-align: right;
+    padding: 1em 0;
+}
+
+ul li {
+    list-style: square;
+}
+
+ul li li {
+    list-style: circle;
+}
+
+ul li li li {
+    list-style: disc;
+}
+
+body header > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 500px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 800px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1300px) {
+    html {
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 1800px) {
+    html {
+        font-size: 23px;
+    }
+}
+
+body {
+    background-color: rgb(238, 238, 238);    
+}
+
+section, article {
+    margin-bottom: 2rem;
+}
+
+header {    
+    display: flex;
+    width: 100%;
+    padding-bottom: 2rem;
+    border-bottom: 0.2em solid black;
+    margin-bottom: 2rem;
+}
+
+section img {
+    float: right;
+    margin-left: 1em;
+}
+
+article img {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+.page {
+    width: 90%;
+    padding: 2em;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+}
+
+.content main {
+    flex: 0 0 70%;
+    margin-right: 1em;
+}
+
+.content aside {
+    flex: 0 0 25%;    
+}
+
+.content aside nav > ul {
+    padding: 0.5rem 1rem;
+}
+
+.content aside nav > ul li {
+    list-style: square;
+    list-style-position: inside;
+}
+
+.content aside nav > ul li a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+
+@media (max-width: 950px) {
+    header {
+        font-size: 14px;
+    }
+    
+    blockquote {
+        width: 60%;
+    }
+}
+
+@media (max-width: 500px) {
+    blockquote {
+        width: 90%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+}
+
+header nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    background-color: white;
+    padding: 0.8em;
+    border-radius: 0.3em;
+}
+
+header nav ul li {
+    list-style: none outside;
+    display: inline-block;    
+    margin-right: 0.5em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 1;
+    background-color: black;
+    padding: 0.5em;
+    border-radius: 0.3em;
+}
+
+header nav ul li a:focus, nav ul li a:hover {
+    background-color: rgb(76, 99, 122);
+}
+
+.nav-togle, .nav-togle-button {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    header {
+        display: block;
+        border-bottom: none;
+    }    
+
+    header nav {
+        display: none;
+    }
+
+    .nav-togle-button {
+        display: block;
+    }
+
+    .nav-togle-button {
+        display: flex;
+        justify-content: center;
+        padding: 3em 0 0.5em 0;
+        font-size: 1.3em;
+    }
+
+    .nav-togle-button .close {
+        display: none;
+    }
+
+    .nav-togle:checked + header .nav-togle-button .close {
+        display: block;
+    }
+
+    .nav-togle:checked + header .nav-togle-button .open {
+        display: none;
+    }
+
+    .nav-togle:checked + header {
+        display: block;        
+    }
+
+    .nav-togle:checked + header nav {
+        display: flex;
+        border-top: 0.15em solid black;
+        border-bottom: 0.15em solid black;
+    }
+
+    .nav-togle:checked + header nav ul {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 100%;
+    }
+
+    .nav-togle:checked + header nav ul li {          
+        padding-bottom: 0.5em;
+    }
+
+    .nav-togle:checked + header nav ul li a {
+        display: flex;        
+        padding: 1em;
+    }
+
+    .nav-togle:checked + header nav ul li:last-child {          
+        padding-bottom: 0;
+    }
+}

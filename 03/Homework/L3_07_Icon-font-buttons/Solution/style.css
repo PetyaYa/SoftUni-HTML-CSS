@@ -1,0 +1,31 @@
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css'); 
+
+html {
+
+    padding-top: 6em;
+    padding-left: 6em;
+}
+
+.button.icon-star {
+	border-radius: 4px;
+	background: green;
+}
+
+.button.icon-mail {
+	border-radius: 4px;
+	background: orange;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+button {
+	padding: 16px;
+	font-size: 1.5em;
+	border: none;
+}
+i{
+	color: white;
+}

@@ -1,0 +1,17 @@
+html {
+	font: 16px/1.5, Ariel, Helvetica, sans-serif;
+}
+
+body, form, table, input, textarea, option, select {
+	font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+h1 { font-size }
+
+body {
+	font-size: 18px;
+	padding: 50px 100px;
+}					

@@ -1,0 +1,49 @@
+html {
+	font: 14px/1.5 Verdana, sans-serif;
+
+}
+body, form, input, textarea, option, select, button {
+	font:inherit;
+}
+
+p, ul{
+	padding-bottom: 1.5em;
+}
+
+ul {
+	padding-left: 2.5em; 
+}
+
+blockquote,
+h1, h2, h3, h4, h5, h6{
+font-family: Georgia, serif;
+} 
+
+h1, h2, h3, h4, h5, h6 {
+	padding-bottom: 0.5em; /* otnasq se kum konkretniq *h* font-size*/
+	padding-top: 1.5rem; /* otnasq se kum html font size*/
+	font-weight: normal;
+	font-family: Georgia, serif;
+}
+
+h1{ font-size: 2.6 }
+h2{ font-size: 2.0 }
+h3{ font-size: 1.6 }
+h4{ font-size: 1.4 }
+h5{ font-size: 1.2 }
+h6{ font-size: 1.0 }
+
+blockquote {
+	padding:0 2.5em;
+	border-left: 2px solid #000;
+	margin-bottom: 1.5em;
+}
+
+blockquote p:last-child {
+	font-style: italic;
+	padding: 0;
+}
+
+blockquote p.author {
+	text-align: right;
+}

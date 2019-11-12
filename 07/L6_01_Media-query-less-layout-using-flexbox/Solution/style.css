@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  padding: 20px;
+}
+body{
+	background: #CCC;
+	display: flex;
+}
+
+header {
+  background-color: white;
+  padding: 30px;
+  font-size: 35px;
+  box-shadow: -1px 1px 15px 0px rgba(133,130,133,1);
+  border-radius: 6px;
+}
+
+
+section {
+
+  display: flex;
+}
+
+
+aside {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  box-shadow: -1px 1px 15px 0px rgba(133,130,133,1);
+  margin: 4px;
+  height: 200px;
+  border-radius: 6px;
+}
+
+
+main {
+  flex: 3;
+  background-color: white;
+  padding: 10px;
+  box-shadow: -1px 1px 15px 0px rgba(133,130,133,1);
+  margin: 4px;
+  border-radius: 6px;
+}
+
+/* Style the footer */
+footer {
+  background-color: white;
+  padding: 10px;
+  box-shadow: -1px 1px 15px 0px rgba(133,130,133,1);
+  border-radius: 6px;
+}

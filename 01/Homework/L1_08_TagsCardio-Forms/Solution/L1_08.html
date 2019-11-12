@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Customer Details</legend>
+			<p>
+				<label for="first_name">First Name</label>
+				<input type="text" name="first_name" id="first_name" tabindex="0" placeholder="George" autofocus>
+			</p>
+			<p>
+				<label for="last_name">Last Name</label>
+				<input type="text" name="last_name" id="last_name" tabindex="0" placeholder="Devis" autofocus>
+			</p>
+			<p>
+				<label for="male">Male</label>
+				<input type="radio" name="sex" value="male" id="male">
+				<label for="female">Female</label>
+				<input type="radio" name="sex" value="female" id="female">
+				<label for="other">Other</label>
+				<input type="radio" name="sex" value="other" id="other">
+			</p>
+			<p>Preferred contact method:
+				<label for="email">Email</label>
+				<input type="radio" name="contact" value="email" id="email">
+				<label for="phone">Phone</label>
+				<input type="radio" name="contact" value="phone" id="phone">
+			</p>
+			<p>
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" placeholder="your@email.com">
+			</p>
+			<p>
+				<label for="country">Town Country</label>
+				<select name="country" id="country">
+					<option value="varna">Varna</option>
+					<option value="plovdiv">Plovdiv</option>
+					<option value="burgas">Burgas</option>
+					<option value="sofia">Sofia</option>
+					<option value="pleven">Pleven</option>
+				</select>
+			</p>
+			<p>Age
+				<label for="age"></label>
+				<input type="number" name="quantity" min="18" max="70">
+			</p>
+			<p>
+			<label for="plang-choice">Programming language</label>
+			<input list="plang" id="plang-choice" name="plang-choice">
+			<datalist id="plang">
+				<option value="JavaScript"></option>
+				<option value="PHP"></option>
+				<option value=""></option>
+				<option value=""></option>
+				<option value=""></option>
+				<option></option>
+			</datalist>
+			</p>
+			<input type="submit">
+		</fieldset>
+	</form>
+</body>
+</html>

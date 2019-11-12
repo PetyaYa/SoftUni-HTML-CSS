@@ -1,0 +1,28 @@
+@import url('reset.css');
+
+body {
+	background: rgb(238, 238, 238);
+	color: rgb(51, 51, 51);
+	padding: 2.5em;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+.aside {
+	width: 40%;
+	display: inline-block;
+	float: right;
+}
+
+
+
+ .site-branding {
+ 	display: inline-block;
+ 	width: 59%;
+ 	vertical-align: left;
+ }
+
+.site-branding img {
+	width: 80%;
+	display: block;
+}
